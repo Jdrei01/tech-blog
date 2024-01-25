@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    height: 100%;
+  }
+  
+  body {
+    background-color: rgb(187, 204, 189);
+    min-height: 100%;
+    line-height: 1.5;
+    font-family: sans-serif;
+  }
+  
+  nav {
+    background-color: rgb(39, 8, 8);
+    padding: 1rem 2rem;
+  }
+  
+  nav a,
+  nav button {
+    color: rgb(187, 204, 189);
+    margin-right: 2rem;
+    text-decoration: none;
+  }
+  
+  nav header {
+    background-color: rgb(187, 204, 189);
+    width: fit-content;
+    padding: 0.2rem 0.8rem;
+    margin: .7rem 0;
+    border-radius: .5rem;
+    box-shadow: 4px 4px 1px rgb(136, 139, 136);
+  }
+  
+  .blog {
+      padding: 2rem;
+  }
+  
+  article  {
+      border: .2rem solid rgb(39, 8, 8);
+      margin-bottom: .5rem;
+      color: rgb(39, 8, 8);
+  }
+  
+  article a {
+      text-decoration: none;
+      color: rgb(39, 8, 8);
+  }
+  
+  article header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color:rgb(39, 8, 8) ;
+      color: rgb(159, 168, 159);
+      padding: .3rem 1rem;
+  }
+  
+  article div {
+      padding: .3rem 1rem;
+  }
