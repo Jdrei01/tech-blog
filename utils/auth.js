@@ -1,10 +1,7 @@
+// Check if the user is logged in
 const withAuth = (req, res, next) => {
+  if (!req.session.currentUser?.loggedIn) return res.redirect('/login'); 
+  next()
+};
 
-    if (!req.session.logged_in) {
-      res.redirect('/login');
-    } else {
-      next();
-    }
-  };
-  
-  module.exports = withAuth;
+module.exports = withAuth;
