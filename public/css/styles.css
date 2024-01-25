@@ -1,65 +1,198 @@
+:root {
+  --primary: #270808;
+  --secondary: #bbccbd;
+  --tertiary: #616161;
+  --quatrinary: #9fa89f;
+}
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  html {
-    height: 100%;
-  }
-  
-  body {
-    background-color: rgb(187, 204, 189);
-    min-height: 100%;
-    line-height: 1.5;
-    font-family: sans-serif;
-  }
-  
-  nav {
-    background-color: rgb(39, 8, 8);
-    padding: 1rem 2rem;
-  }
-  
-  nav a,
-  nav button {
-    color: rgb(187, 204, 189);
-    margin-right: 2rem;
-    text-decoration: none;
-  }
-  
-  nav header {
-    background-color: rgb(187, 204, 189);
-    width: fit-content;
-    padding: 0.2rem 0.8rem;
-    margin: .7rem 0;
-    border-radius: .5rem;
-    box-shadow: 4px 4px 1px rgb(136, 139, 136);
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background-color: var(--secondary);
+  min-height: 100%;
+  line-height: 1.5;
+  font-family: sans-serif;
+}
+
+nav {
+  background-color: var(--primary);
+  padding: 1rem 2rem;
+}
+
+nav a,
+#logout {
+  color: var(--secondary);
+  background-color: var(--primary);
+  border: none;
+  margin-right: 2rem;
+  text-decoration: none;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+#logout {
+  margin-right: 0;
+}
+
+nav header {
+  background-color: var(--secondary);
+  width: fit-content;
+  padding: 0.2rem 0.8rem;
+  margin: 0.7rem 0;
+  border-radius: 0.5rem;
+  box-shadow: 4px 4px 1px var(--tertiary);
+}
+
+.blog {
+  padding: 2rem 4rem;
+}
+
+.card {
+  border: 0.2rem solid var(--primary);
+  margin-bottom: 0.5rem;
+  color: var(--primary);
+}
+
+.card div {
+  padding: 0.3rem 1rem;
+}
+
+.card header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--primary);
+  color: var(--quatrinary);
+  padding: 0.3rem 1rem;
+}
+
+.card header h2 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 25rem;
+}
+
+.card > a {
+  text-decoration: none;
+  color: var(--primary);
+}
+
+.hide {
+  display: none;
+}
+
+.form-wrapper {
+  width: 70%;
+  margin: auto;
+}
+
+.form h2 {
+  background-color: var(--primary);
+  color: var(--quatrinary);
+  padding: 0.3rem 1rem;
+}
+
+.form a {
+  text-decoration: none;
+}
+
+.form textarea,
+.form input {
+  width: 100%;
+  height: 2.5rem;
+  margin-bottom: 1rem;
+  text-indent: 1rem;
+}
+
+.form textarea {
+  height: 5rem;
+  resize: none;
+  padding: 0.3rem;
+}
+
+.form button {
+  width: 100%;
+  height: 2.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  background-color: var(--tertiary);
+  color: var(--secondary);
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.new-post,
+.comments-content button {
+  background-color: var(--tertiary);
+  color: var(--secondary);
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  margin: 1rem 0;
+  text-decoration: none;
+}
+
+.comments-content p {
+  margin-bottom: 0.7rem;
+}
+
+.comments-content article {
+  max-height: 15rem;
+  overflow-y: scroll;
+}
+
+#dashboard a:hover,
+button:hover {
+  background-color:#524e4e
+}
+
+#dashboard div {
+  margin-top: 1rem;
+}
+
+#dashboard div,
+#homepage {
+  max-height: 28rem;
+  overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--quatrinary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--tertiary);
+}
+
+@media screen and (max-width: 750px) {
   .blog {
-      padding: 2rem;
+    padding: 2rem 1rem;
   }
-  
-  article  {
-      border: .2rem solid rgb(39, 8, 8);
-      margin-bottom: .5rem;
-      color: rgb(39, 8, 8);
+
+  .card header h2 {
+    width: 10rem;
   }
-  
-  article a {
-      text-decoration: none;
-      color: rgb(39, 8, 8);
+
+  .form-wrapper {
+    width: 90%;
   }
-  
-  article header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      background-color:rgb(39, 8, 8) ;
-      color: rgb(159, 168, 159);
-      padding: .3rem 1rem;
+
+  nav a {
+    margin-right: 1rem;
   }
-  
-  article div {
-      padding: .3rem 1rem;
-  }
+}
