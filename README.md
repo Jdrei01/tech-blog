@@ -6,7 +6,7 @@ This is a full stack application, which follows the MVC paradigm in its architec
 ## Usage
 The user can login or sign up to the website. If the user is logged in they can browse the existing blogs, create a new blog, or live a comment.
 
-Go to [Tech Blog]()
+Go to [Tech Blog](https://tech-blog-eyesore-d9cfc1a53475.herokuapp.com/)
 
 ![Animation cycles through signing into the app, clicking on buttons, and updating blog posts.](./public/images/tech-blog.gif)
 
