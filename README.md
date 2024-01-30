@@ -8,6 +8,8 @@ The user can login or sign up to the website. If the user is logged in they can 
 
 Go to [Tech Blog]()
 
+![Animation cycles through signing into the app, clicking on buttons, and updating blog posts.](./public/images/tech-blog.gif)
+
 ## Credits
 ​Created by Jandrei Timoteo with the help of Tutor Andrew Hardemon.​
 
