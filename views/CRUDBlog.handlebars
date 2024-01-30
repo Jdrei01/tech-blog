@@ -1,0 +1,35 @@
+<section id="blog-post">
+    {{> homeItem}}
+    <div class="card">
+        <header>
+            <h2>Comments</h2>
+        </header>
+        <div class="comments-content">
+            <article>
+                {{#each comments}}
+                <h4>- {{capitalize this.user.username}}, {{format_date this.createdAt}}</h4>
+                <p>{{this.content}}</p>
+                {{/each}}
+            </article>
+            <button>Add Comment</button>
+        </div>
+        <div class="comment-form-wrapper hide">
+            <form class="form comment-form">
+                <div>
+                    <textarea></textarea>
+                </div>
+                <div>
+                    {{#if loggedIn}}
+                    <button data-blogid="{{this.id}}">Submit</button>
+                    {{else}}
+                    <p>Please login first!</p>
+                    <button type="button">Submit</button>
+                    {{/if}}
+                </div>
+
+            </form>
+        </div>
+    </div>
+</section>
+
+<script src="/js/comment.js"></script>
